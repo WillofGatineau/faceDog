@@ -1,0 +1,27 @@
+<h1>List of dogs</h1>
+
+<% i = 2 %>
+
+<% @dogs.each do |dog| %>
+
+<% if i % 2 == 0 %>
+<div class="light_container">
+
+<% else %>
+<div class="dark_container">
+<% end %>  
+  <div class="image_content">
+    <img src="<%= dog.image %>" style="width:200px;" >
+  </div>
+  <div class="info_content">
+    <p><b>Owner:</b> <a href="users/<%=dog.user_id %>"><%= User.find(dog.user_id).forname %></a></p>
+    <p><b>Name:</b> <%= dog.name %></p>
+    <p><b>Race:</b> <%= dog.race %></p>  
+    <p><b>Color:</b> <%= dog.color %></p> 
+    <p><b>Age:</b> <%= dog.age %></p> 
+  </div>
+  <div style="clear:both;">
+</div>  
+<% i += 1 %>  
+<% end %>  
+    

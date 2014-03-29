@@ -1,0 +1,24 @@
+// Place all the styles related to the dogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.light_container {
+  background-color: #CAC37F;
+  width: 100%;
+}
+.dark_container {
+  background-color: #484E32;
+  width: 100%;
+}
+
+.image_content {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.info_content {
+  float: left;
+  width: calc(80% - 10px);
+}

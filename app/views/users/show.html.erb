@@ -1,0 +1,9 @@
+<h1>This is a profile card for our user, it's ugly for now, but hey! At least it's working</h1>
+
+<% if defined? @user %> 
+<p><b>First name:</b> <%= @user.forname %></p>
+<p><b>last name:</b> <%= @user.lastname %></p>
+<p><b>age:</b> <%= @user.age %></p>
+<p><b>city:</b> <%= @user.city %></p>
+<p><b>Occupation:</b> <%= @user.occupation %></p>
+<% end %>
