@@ -12,7 +12,17 @@ class Dog < ActiveRecord::Base
     with: %r{\w(\w|\/\w)+.(jpeg|png|jpg|bmp|gif)},
     message: "image url is not well formatted."
   }
-  
+
+  validates :color, length: {in: 2..20}, format: {
+    with: %r{\A[a-zA-Z]+\z},
+    message: "bad color name"
+  }
+
+  validates :race, length: {in: 2..75}, format: {
+    with: %r{\A[a-zA-Z]([a-zA-Z]|\s[a-zA-Z])+\z},
+    message: "bad race name."
+  }
+
 end
 
 
