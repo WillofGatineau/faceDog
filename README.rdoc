@@ -1,28 +1,40 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This is rails application is an incomplete platform about dogs and their owner. As it shouldn't be taken seriously, this is simply to test my skills with rails and ruby.
+The idea came from the CSGAMES 2014 competition I atended (http://csgames.org). At the web dev competition I had the chance to work with the play framework (which isn't really that great to be honest).
+Basically, we had only 3 hours to create a website where we could buy and sells cats. Needless to say, our team wasn't the best with the play framework so we failed pretty hard at this. I still thought that it would
+have been way easier to recreate this "shopping" platform on Rails, because let's be honest here: Ruby is way more slick and efficient than Java in web dev.
 
-* Ruby version
+Anyway, here what has been done so far:
 
-* System dependencies
+User model including the proper validation
 
-* Configuration
+Dog model including the proper validation
 
-* Database creation
+=== Dogs Controller
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Only the index method is in use so far. As such, the view of this controller generates a list of all the dogs that are currently in the database, with a link to their owner's profile.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== Users Controller
+
+Only the show method is being used right now. Stuff I want to do in the nearest future:
+
+Implement new and create (it takes like 2 seconds but since I'm at the end of the semester I almost don't have time).
+
+
+=== Specs
+
+I used Rails v 4.0.2 and Ruby 2.0.0p247
+
+== How to run
+
+1. bundle install is a good start since this application uses Bcrypt to help hash the passwords of our users.
+
+2. Then it's a good idea to verify the seeds (as you may modify them as you wish) => don't forget to run rake db:seeds after
+
+3. Run the server, the root of this application is set to dogs#index
+
+
+
