@@ -36,5 +36,8 @@ I used Rails v 4.0.2 and Ruby 2.0.0p247
 
 3. Run the server, the root of this application is set to dogs#index
 
+=== About me
+
+I'm simply a 21 years old French Canadian student that is passionate about backend web development. While my university is more so focused on Java/c++ and nothing that is web dev, I still have been passionate about it for years.
 
 
