@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140329042344) do
+ActiveRecord::Schema.define(version: 20140330044925) do
 
   create_table "dogs", force: true do |t|
     t.integer  "user_id"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20140329042344) do
     t.string   "color"
     t.integer  "age"
     t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", force: true do |t|
+    t.integer  "dog_id"
+    t.string   "url"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
