@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330044925) do
+ActiveRecord::Schema.define(version: 20140331201227) do
 
   create_table "dogs", force: true do |t|
     t.integer  "user_id"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20140330044925) do
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
+    t.boolean  "gender"
   end
 
   create_table "images", force: true do |t|
