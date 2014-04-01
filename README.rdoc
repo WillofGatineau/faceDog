@@ -7,6 +7,9 @@
 
 * 31-03-2014 Added two columns to the dogs table: description:text, gender:boolean
 
+* 31-03-2014 Started working on the new and create method for dogs and as such I added a new model to the application: breed, which should hold date of all the possible breeds. Seeds has ben modified also.
+
+
 This is rails application is an incomplete platform about dogs and their owner. As it shouldn't be taken seriously, this is simply to test my skills with rails and ruby.
 The idea came from the CSGAMES 2014 competition I atended (http://csgames.org). At the web dev competition I had the chance to work with the play framework (which isn't really that great to be honest).
 Basically, we had only 3 hours to create a website where we could buy and sells cats. Needless to say, our team wasn't the best with the play framework so we failed pretty hard at this. I still thought that it would

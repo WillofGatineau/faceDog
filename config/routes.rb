@@ -1,7 +1,10 @@
 FaceDog::Application.routes.draw do
 
 get "dogs/index"
+get "dogs/new"
 get '/users/:id', to: 'users#show'
+
+post "dogs/create"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

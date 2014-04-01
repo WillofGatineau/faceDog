@@ -6,43 +6,77 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.delete_all
-Dog.delete_all
+Breed.delete_all
 
-Dog.create!(user_id:1, name: 'Kobe', race: 'Poodle', color: 'brown', age:4, image:'images/poodle.jpg')
-Dog.create!(user_id:2, name: 'Nukka', race: 'Husky', color: 'gray', age:2, image:'images/husky.jpg')
-Dog.create!(user_id:3, name: 'Cujo', race: 'pug', color: 'beige', age:6, image:'images/pug.jpg')
-Dog.create!(user_id:1, name: 'Peabody', race: 'Unknown', color: 'white', age:19, image:'images/peabody.jpg')
+#Breed letter A 
+Breed.create(name: "Affenpinscher", group: "Toy Group")
+Breed.create(name: "Afghan Hound", group: "Hound Group")
+Breed.create(name: "Aidi", group: "Guardian Dog")
+Breed.create(name: "Airedale Terrier", group: "Terrier Group")
+Breed.create(name: "Akbash", group: "Guardian Dog")
+Breed.create(name: "Akita Inu", group: "Working Group")
+Breed.create(name: "Alano Español", group: "")
+Breed.create(name: "Alaskan Klee Kai", group: "Northern Breed")
+Breed.create(name: "Alaskan Malamute", group: "Working Group")
+Breed.create(name: "Alpine Dachsbracke", group: "Scenthound")
+Breed.create(name: "American Akita", group: "Working Group")
+Breed.create(name: "American Bulldog", group: "Guardian Dog")
+Breed.create(name: "American Cocker Spaniel", group: "Sporting Group")
+Breed.create(name: "American Eskimo Dog", group: "Non-Sporting Group")
+Breed.create(name: "American Foxhound", group: "Hound Group")
+Breed.create(name: "American Hairless Terrier", group: "Terrier Group")
+Breed.create(name: "American Pit Bull Terrier", group: "Terrier Group")
+Breed.create(name: "American Staffordshire Terrier", group: "Terrier Group")
+Breed.create(name: "American Water Spaniel", group: "Sporting Group")
+Breed.create(name: "Anatolian Shepherd Dog", group: "Working Group")
+Breed.create(name: "Anglo-Français de Petite Vénerie", group: "Scenthound")
+Breed.create(name: "Appenzeller Sennenhund", group: " Guardian Dog")
+Breed.create(name: "Ariege Pointer", group: "Gun Dog")
+Breed.create(name: "Ariegeois", group: "Scenthound")
+Breed.create(name: "Armant", group: "")
+Breed.create(name: "Armenian Gampr dog", group: "")
+Breed.create(name: "Artois Hound", group: "")
+Breed.create(name: "Australian Cattle Dog", group: "Herding Group")
+Breed.create(name: "Australian Kelpie", group: "Herding Group")
+Breed.create(name: "Australian Shepherd", group: "Herding Group")
+Breed.create(name: "Australian Silky Terrier", group: "Toy Group")
+Breed.create(name: "Australian Stumpy Tail Cattle Dog", group: "Herding Group")
+Breed.create(name: "Australian Terrier", group: "Terrier Group")
+Breed.create(name: "Austrian Black and Tan Hound", group: "Scenthound")
+Breed.create(name: "Austrian Pinscher", group: "Terrier Group")
+Breed.create(name: "Azawakh", group: "Hound Group")
 
+#Breed letter B
+Breed.create(name: "Bakharwal Dog", group: "")
+Breed.create(name: "Barbet", group: "Gun Dog")
+Breed.create(name: "Basenji", group: "Hound Group")
+Breed.create(name: "Basque Shepherd Dog", group: "")
+Breed.create(name: "Basset Artésien Normand", group: "Scenthound")
+Breed.create(name: "Basset Bleu de Gascogne", group: "Scenthound")
+Breed.create(name: "Basset Fauve de Bretagne", group: "Hound Group")
+Breed.create(name: "Basset Griffon Vendéen, Grand", group: "Scenthound")
+Breed.create(name: "Basset Griffon Vendéen, Petit", group: "Scenthound")
+Breed.create(name: "Basset Hound", group: "Scenthound")
+Breed.create(name: "Bavarian Mountain Hound", group: "")
+Breed.create(name: "Beagle", group: "Hound Group")
+Breed.create(name: "Beagle-Harrier", group: "Scenthound")
+Breed.create(name: "Bearded Collie", group: "Herding Group")
+Breed.create(name: "Beauceron", group: "Herding Group")
+Breed.create(name: "Bedlington Terrier", group: "Terrier Group")
+Breed.create(name: "Belgian Shepherd Dog (Groenendael)", group: "Herding Group")
+Breed.create(name: "Belgian Shepherd Dog (Laekenois)", group: "Herding Group")
+Breed.create(name: "Belgian Shepherd Dog (Malinois)", group: "Herding Group")
+Breed.create(name: "Belgian Shepherd (Tervuren)", group: "Herding Group")
+Breed.create(name: "Bergamasco Shepherd", group: "Herding Group")
+Breed.create(name: "Berger Blanc Suisse", group: "")
+Breed.create(name: "Berger Picard", group: "Herding Dog")
+Breed.create(name: "Berner Laufhund", group: "")
+Breed.create(name: "Bernese Mountain Dog", group: "Working Group")
+Breed.create(name: "Bichon Frisé", group: "Non-Sporting Group")
+Breed.create(name: "Billy", group: "Scenthound ")
+Breed.create(name: "Black and Tan Coonhound", group: "Hound Group")
+Breed.create(name: "Black and Tan Virginia Foxhound", group: "")
+Breed.create(name: "Black Norwegian Elkhound", group: "Hound Group")
+Breed.create(name: "Black Russian Terrier", group: "Working Group")
+Breed.create(name: "Blackmouth Cur", group: "Scenthound")
 
-User.create!(id: 1,
-	     username: 'Winter',
-             password: 'babyboy',
-	     forname: 'William',
-	     lastname: 'Wright',
-	     age: 21,
-	     city: 'Gatineau',
-             occupation: 'I am a student'
-             )
-
-User.create!(
-             id: 2,  		
-	     username: 'Summer',
-             password: 'goodyear',
-	     forname: 'John',
-	     lastname: 'Smith',
-	     age: 34,
-	     city: 'Nepean',
-             occupation: 'I am a police officer'
-             )
-
-User.create!(
-             id: 3,
-	     username: 'Autumn',
-             password: 'fluffypie123',
-	     forname: 'Celeste',
-	     lastname: 'Degeneres',
-	     age: 8,
-	     city: 'Nepean',
-             occupation: 'I am a fairy'
-             )
