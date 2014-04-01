@@ -1,0 +1,27 @@
+<h1>Add a new dog</h1>
+
+<%= form_for @dog, url: {action: "create"} do |f| %>
+<p>
+  <%= f.label :name, "Dog name:" %><br>
+  <%= f.text_field :name, size: 40 %>
+</p>
+<p>
+  <%= f.label :age, "Dog age:" %><br>
+  <%=  f.select :age, @ages %>
+</p> 
+ <p>
+  <%= f.label :race, "Dog breed" %><br>
+  <%= f.select :race, Breed.all.collect {|p| [p.name]}%>
+</p>  
+<p>
+  <%= f.label :color, "Color:" %><br>
+  <%=  f.select :color, @colors  %>
+</p>
+<p>
+  <%= f.label :image, "image url:" %><br>
+  <%= f.text_field :image, size: 40 %>
+</p>
+<p>
+  <%= f.submit %>
+</p>  
+<% end %>  
